@@ -11,7 +11,7 @@ async function getData(category){
     try {
     let response = await fetch('https://apimocha.com/json-logitech-s8/all-products');
     let data = await response.json();
-    console.log(category);
+    console.log(data);
     organiceData(data,category);
     } catch (e) {
     console.log(e);
